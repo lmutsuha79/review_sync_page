@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Apply scrolling animation to each column
-  columns.forEach((column, i) => {
+  columns.forEach((column) => {
     column.classList.add("animate-scroll");
 
     // Pause scrolling on hover
