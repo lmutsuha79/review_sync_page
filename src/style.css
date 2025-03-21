@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  } /* Moves only half, since we duplicated the list */
+}
+
+.testimonial-column {
+  overflow: hidden;
+  height: 800px; /* Fixed height */
+  position: relative;
+}
+
+.testimonial-column.animate-scroll {
+  animation: scroll-up 15s linear infinite; /* Smooth infinite loop */
+}
+
+.testimonial-column.paused {
+  animation-play-state: paused;
+}
