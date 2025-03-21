@@ -1,381 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <title>ReviewSync - Turn Reviews Into Sales</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="flex justify-between px-[50px] py-[16px]">
-      <img src="/logo.svg" alt="ReviewSync Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/brand-logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>ReviewSync - Turn Reviews Into Sales</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="flex justify-between px-[50px] py-[16px]">
+    <img src="/logo.svg" alt="ReviewSync Logo" />
+    <button
+      class="cursor-pointer flex items-center justify-center rounded-xl bg-gradient-to-r from-[#7348FF] to-[#4E2AC3] text-white font-bold shadow-lg hover:from-[#5c36cc] hover:to-[#3b1e99] transition px-[20px] py-4">
+      Join Waitlist
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="flex justify-center items-center mt-[30px]">
+    <div class="max-w-[1015px] flex flex-col gap-[40px] justify-center">
+      <!-- Promotion Banner -->
+      <p class="bg-[#FFEEC2] text-[#FF8800] font-medium text-lg rounded-[14.5px] w-fit mx-auto px-4 py-2">
+        30% Discount for the early birds!
+      </p>
+
+      <!-- Hero Content -->
+      <h3
+        class="flex items-center justify-center text-[#333333] font-sans font-bold text-[56px] leading-[68.32px] tracking-[-1.1%] text-center">
+        Turn your happy customers into more sales
+      </h3>
+      <p
+        class="flex items-center justify-center text-[#969598] font-sans font-medium text-[20px] leading-[23.87px] tracking-[0%] text-center">
+        Show off your best reviews in seconds! Build trust, attract more
+        buyers, and grow your sales without breaking a sweat.
+      </p>
+
+      <!-- CTA Button -->
       <button
-        class="cursor-pointer flex items-center justify-center rounded-xl bg-gradient-to-r from-[#7348FF] to-[#4E2AC3] text-white font-bold shadow-lg hover:from-[#5c36cc] hover:to-[#3b1e99] transition px-[20px] py-4"
-      >
-        Join Waitlist
+        class="cursor-pointer flex items-center justify-center rounded-xl bg-gradient-to-r from-[#7348FF] to-[#4E2AC3] text-white font-bold shadow-lg hover:from-[#5c36cc] hover:to-[#3b1e99] transition p-[20px] w-fit mx-auto">
+        Join waitlist - for free
       </button>
-    </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="flex justify-center items-center mt-[30px]">
-      <div class="max-w-[1015px] flex flex-col gap-[40px] justify-center">
-        <!-- Promotion Banner -->
-        <p
-          class="bg-[#FFEEC2] text-[#FF8800] font-medium text-lg rounded-[14.5px] w-fit mx-auto px-4 py-2"
-        >
-          30% Discount for the early birds!
+  <!-- Features Section -->
+  <section class="mt-[200px] min-h-[1000px] relative pb-[136px]" style="background-image: url('/bg_section_1.svg')">
+    <!-- Featured Review Card -->
+    <div class="absolute left-0 right-0 -top-[140px]">
+      <div class="w-[428px] mx-auto p-[32px] bg-white shadow-lg rounded-xl">
+        <!-- User Info -->
+        <div class="flex items-center space-x-3">
+          <img src="/face1.svg" alt="User Avatar" class="w-[60px] h-[60px] rounded-[12px]" />
+          <h2 class="text-[24px] font-semibold">Oussama Mekhaldi</h2>
+        </div>
+
+        <!-- Review Text -->
+        <p class="text-[#969598] text-[16px] my-[32px] font-semibold">
+          ReviewSync made my life so much easier! In just a week, I gained the
+          social proof I needed to close more deals. Highly recommend!
         </p>
 
-        <!-- Hero Content -->
-        <h3
-          class="flex items-center justify-center text-[#333333] font-sans font-bold text-[56px] leading-[68.32px] tracking-[-1.1%] text-center"
-        >
-          Turn your happy customers into more sales
+        <!-- Review Video -->
+        <div class="mt-3 relative">
+          <img src="/card1Bg.png" alt="Video Thumbnail" class="rounded-lg" />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <button class="bg-white p-2 rounded-full shadow-md">
+              <img src="/play-button.svg" alt="Play Video" class="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Brand Logo -->
+        <div class="mt-3 flex justify-center">
+          <img src="/brand-logo.svg" alt="Brand Logo" width="51" height="51" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Content -->
+    <div class="pt-[475px]">
+      <!-- Feature 1: Collect Testimonials -->
+      <div class="text-center">
+        <span
+          class="mb-[34px] text-[24px] font-medium leading-[28.64px] tracking-normal text-[#AF5A98] text-center">First</span>
+        <h3 class="text-[56px] font-bold leading-[66.83px] tracking-tight text-[#202A46] text-center">
+          Collect testimonials effortlessly
         </h3>
-        <p
-          class="flex items-center justify-center text-[#969598] font-sans font-medium text-[20px] leading-[23.87px] tracking-[0%] text-center"
-        >
-          Show off your best reviews in seconds! Build trust, attract more
-          buyers, and grow your sales without breaking a sweat.
-        </p>
-
-        <!-- CTA Button -->
-        <button
-          class="cursor-pointer flex items-center justify-center rounded-xl bg-gradient-to-r from-[#7348FF] to-[#4E2AC3] text-white font-bold shadow-lg hover:from-[#5c36cc] hover:to-[#3b1e99] transition p-[20px] w-fit mx-auto"
-        >
-          Join waitlist - for free
-        </button>
       </div>
-    </header>
-
-    <!-- Features Section -->
-    <section
-      class="mt-[200px] min-h-[1000px] relative pb-[136px]"
-      style="background-image: url('/bg_section_1.svg')"
-    >
-      <!-- Featured Review Card -->
-      <div class="absolute left-0 right-0 -top-[140px]">
-        <div class="w-[428px] mx-auto p-[32px] bg-white shadow-lg rounded-xl">
-          <!-- User Info -->
-          <div class="flex items-center space-x-3">
-            <img
-              src="/face1.svg"
-              alt="User Avatar"
-              class="w-[60px] h-[60px] rounded-[12px]"
-            />
-            <h2 class="text-[24px] font-semibold">Oussama Mekhaldi</h2>
-          </div>
-
-          <!-- Review Text -->
-          <p class="text-[#969598] text-[16px] my-[32px] font-semibold">
-            ReviewSync made my life so much easier! In just a week, I gained the
-            social proof I needed to close more deals. Highly recommend!
-          </p>
-
-          <!-- Review Video -->
-          <div class="mt-3 relative">
-            <img src="/card1Bg.png" alt="Video Thumbnail" class="rounded-lg" />
-            <div class="absolute inset-0 flex items-center justify-center">
-              <button class="bg-white p-2 rounded-full shadow-md">
-                <svg
-                  class="w-6 h-6 text-gray-800"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Brand Logo -->
-          <div class="mt-3 flex justify-center">
-            <svg
-              width="51"
-              height="51"
-              viewBox="0 0 51 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g style="mix-blend-mode: exclusion">
-                <g filter="url(#filter0_d_58_5710)">
-                  <rect
-                    x="19.8594"
-                    y="8.95605"
-                    width="29.6258"
-                    height="27.6355"
-                    rx="1.09148"
-                    transform="rotate(14.7129 19.8594 8.95605)"
-                    fill="#004BAA"
-                  />
-                </g>
-                <g filter="url(#filter1_d_58_5710)">
-                  <rect
-                    x="3.3418"
-                    y="13.0569"
-                    width="31.1852"
-                    height="27.6355"
-                    rx="1.09148"
-                    transform="rotate(-14.7846 3.3418 13.0569)"
-                    fill="#003372"
-                  />
-                </g>
-                <g filter="url(#filter2_d_58_5710)">
-                  <rect
-                    x="7.93164"
-                    y="17.3715"
-                    width="36.083"
-                    height="27.6355"
-                    rx="1.09148"
-                    fill="#0066E6"
-                  />
-                </g>
-                <circle cx="15.3975" cy="24.2127" r="4.2295" fill="#2284FF" />
-                <rect
-                  x="11.168"
-                  y="30.781"
-                  width="29.3531"
-                  height="1.71519"
-                  fill="#2284FF"
-                />
-                <rect
-                  x="22.3164"
-                  y="23.3746"
-                  width="12.9809"
-                  height="1.71519"
-                  fill="#2284FF"
-                />
-                <rect
-                  x="11.168"
-                  y="34.8352"
-                  width="29.3531"
-                  height="1.71519"
-                  fill="#2284FF"
-                />
-                <rect
-                  x="11.168"
-                  y="38.8893"
-                  width="16.6841"
-                  height="1.71519"
-                  fill="#2284FF"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_58_5710"
-                  x="13.082"
-                  y="8.88541"
-                  width="35.2684"
-                  height="34.0831"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="0.0779631" dy="-0.311852" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0.4 0 0 0 0 0.901961 0 0 0 1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_58_5710"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_58_5710"
-                    result="shape"
-                  />
-                </filter>
-                <filter
-                  id="filter1_d_58_5710"
-                  x="3.46704"
-                  y="5.02909"
-                  width="36.8376"
-                  height="34.5062"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="-0.116945" dy="-0.311852" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0.295313 0 0 0 0 0.665902 0 0 0 1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_58_5710"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_58_5710"
-                    result="shape"
-                  />
-                </filter>
-                <filter
-                  id="filter2_d_58_5710"
-                  x="7.93164"
-                  y="16.9816"
-                  width="36.083"
-                  height="28.0253"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="-0.389815" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0.13431 0 0 0 0 0.518225 0 0 0 0 1 0 0 0 1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_58_5710"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_58_5710"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
+      <div class="max-w-[1200px] mx-auto relative mt-[80px] py-[287px] bg-white rounded-[40px]">
+        <video class="w-full h-full absolute inset-0 object-cover rounded-[40px]" autoplay loop muted playsinline>
+          <source src="/vid1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
-      <!-- Feature Content -->
-      <div class="pt-[475px]">
-        <!-- Feature 1: Collect Testimonials -->
-        <div class="text-center">
-          <span
-            class="mb-[34px] text-[24px] font-medium leading-[28.64px] tracking-normal text-[#AF5A98] text-center"
-            >First</span
-          >
-          <h3
-            class="text-[56px] font-bold leading-[66.83px] tracking-tight text-[#202A46] text-center"
-          >
-            Collect testimonials effortlessly
-          </h3>
-        </div>
-        <div
-          class="max-w-[1200px] mx-auto relative mt-[80px] py-[287px] bg-white rounded-[40px]"
-        >
-          <video
-            class="w-full h-full absolute inset-0 object-cover rounded-[40px]"
-            autoplay
-            loop
-            muted
-            playsinline
-          >
-            <source src="/vid1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <!-- Feature 2: Share Testimonials -->
-        <div class="my-[80px] text-center">
-          <span
-            class="mb-[34px] text-[24px] font-medium leading-[28.64px] text-center text-[#7348A4]"
-          >
-            Sec... oh you are ready no extra steps needed!
-          </span>
-          <h3
-            class="text-[56px] font-bold leading-[66.83px] tracking-[-1.1%] text-center text-[#202A46]"
-          >
-            Create & share testimonials
-          </h3>
-        </div>
-        <div
-          class="max-w-[1200px] mx-auto relative mt-[80px] py-[287px] bg-white rounded-[40px]"
-        >
-          <video
-            class="w-full h-full absolute inset-0 object-cover rounded-[40px]"
-            autoplay
-            loop
-            muted
-            playsinline
-          >
-            <source src="/vid2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <!-- Feature 2: Share Testimonials -->
+      <div class="my-[80px] text-center">
+        <span class="mb-[34px] text-[24px] font-medium leading-[28.64px] text-center text-[#7348A4]">
+          Sec... oh you are ready no extra steps needed!
+        </span>
+        <h3 class="text-[56px] font-bold leading-[66.83px] tracking-[-1.1%] text-center text-[#202A46]">
+          Create & share testimonials
+        </h3>
       </div>
-    </section>
-
-    <!-- Testimonials Carousel Section -->
-    <section
-      id="testimonial-section"
-      class="mt-[100px] max-w-[1200px] mx-auto flex gap-[28px] overflow-hidden relative h-[500px]"
-    >
-      <div class="testimonial-column flex flex-col gap-[28px] w-1/3"></div>
-      <div class="testimonial-column flex flex-col gap-[28px] w-1/3"></div>
-      <div class="testimonial-column flex flex-col gap-[28px] w-1/3"></div>
-
-      <!-- Gradient Overlays -->
-      <div
-        class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent pointer-events-none"
-      ></div>
-      <div
-        class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent pointer-events-none"
-      ></div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white p-[120px]">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <!-- Legal Links and Copyright -->
-        <div
-          class="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between text-sm text-[#596780]"
-        >
-          <div class="flex space-x-4">
-            <a href="#" class="hover:text-gray-900">Privacy Policy</a>
-            <span>|</span>
-            <a href="#" class="hover:text-gray-900">Terms & Conditions</a>
-            <span>|</span>
-            <a href="#" class="hover:text-gray-900">Cookie Policy</a>
-          </div>
-          <p class="mt-4 md:mt-0">&copy; ReviewSync 2025</p>
-        </div>
+      <div class="max-w-[1200px] mx-auto relative mt-[80px] py-[287px] bg-white rounded-[40px]">
+        <video class="w-full h-full absolute inset-0 object-cover rounded-[40px]" autoplay loop muted playsinline>
+          <source src="/vid2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="/src/main.ts"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const testimonialCarouselHTML =
-          createTestimonialCarousel(testimonialData);
-        document.getElementById("testimonial-section").innerHTML =
-          testimonialCarouselHTML;
-      });
-    </script>
-  </body>
+  <!-- Testimonials Carousel Section -->
+  <section id="testimonial-section"
+    class="mt-[100px] max-w-[1200px] mx-auto flex gap-[28px] overflow-hidden relative h-[500px]">
+    <div class="testimonial-column flex flex-col gap-[28px] w-1/3"></div>
+    <div class="testimonial-column flex flex-col gap-[28px] w-1/3"></div>
+    <div class="testimonial-column flex flex-col gap-[28px] w-1/3"></div>
+
+    <!-- Gradient Overlays -->
+    <div class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent pointer-events-none">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white p-[120px]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Legal Links and Copyright -->
+      <div class="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between text-sm text-[#596780]">
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-900">Privacy Policy</a>
+          <span>|</span>
+          <a href="#" class="hover:text-gray-900">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#" class="hover:text-gray-900">Cookie Policy</a>
+        </div>
+        <p class="mt-4 md:mt-0">&copy; ReviewSync 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/src/main.ts"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const testimonialCarouselHTML =
+        createTestimonialCarousel(testimonialData);
+      document.getElementById("testimonial-section").innerHTML =
+        testimonialCarouselHTML;
+    });
+  </script>
+</body>
+
 </html>
