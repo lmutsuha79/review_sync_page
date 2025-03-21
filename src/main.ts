@@ -1,3 +1,4 @@
+console.log("Hello, world!");
 document.addEventListener("DOMContentLoaded", function () {
   const columns = document.querySelectorAll(".testimonial-column");
 
