@@ -163,8 +163,8 @@
           </h2>
         </section>
         <div class="max-w-[1200px] mx-auto relative mt-8 sm:mt-[80px] py-[150px] sm:py-[287px] bg-white rounded-[40px]">
-          <video class="w-full h-full absolute inset-0 object-cover rounded-[40px]" autoplay loop muted playsinline
-            aria-label="Demo of collecting testimonials">
+          <video class="feature-video w-full h-full absolute inset-0 object-cover rounded-[40px]" loop muted playsinline
+            aria-label="Demo of collecting testimonials" data-video-src="/vid1.mp4">
             <source src="/vid1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -182,8 +182,8 @@
           </h2>
         </section>
         <div class="max-w-[1200px] mx-auto relative mt-8 sm:mt-[80px] py-[150px] sm:py-[287px] bg-white rounded-[40px]">
-          <video class="w-full h-full absolute inset-0 object-cover rounded-[40px]" autoplay loop muted playsinline
-            aria-label="Demo of sharing testimonials">
+          <video class="feature-video w-full h-full absolute inset-0 object-cover rounded-[40px]" loop muted playsinline
+            aria-label="Demo of sharing testimonials" data-video-src="/vid2.mp4">
             <source src="/vid2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -365,11 +365,36 @@
         column.addEventListener("mouseenter", () => column.classList.add("paused"));
         column.addEventListener("mouseleave", () => column.classList.remove("paused"));
       });
-    });
 
-    // Hero and Featured Review animations
-    document.addEventListener("DOMContentLoaded", function () {
-      // Hero animations
+      // Video autoplay on scroll
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const video = entry.target;
+          
+          // Play video when it enters viewport
+          if (entry.isIntersecting) {
+            video.play().catch(error => {
+              console.log("Video autoplay failed:", error);
+            });
+          } else {
+            // Pause when it leaves viewport
+            video.pause();
+            
+            // Reset video position to start
+            video.currentTime = 0;
+          }
+        });
+      }, {
+        // Start playing when video is 40% visible
+        threshold: 0.4
+      });
+
+      // Observe all feature videos
+      document.querySelectorAll('.feature-video').forEach(video => {
+        videoObserver.observe(video);
+      });
+
+      // Hero and Featured Review animations
       const heroElements = document.querySelectorAll('.hero-element');
       const animationDuration = 600; // 0.6s = 600ms (from fadeInUp animation)
 
